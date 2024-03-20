@@ -34,10 +34,13 @@ code {
   margin: 5px;
   padding: 5px;
   justify-content: space-evenly;
+  text-decoration: none;
 }
 .a {
-  margin: 3px;
-  padding: 3px;
+  margin: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 6px;
   color: white;
 }
 
