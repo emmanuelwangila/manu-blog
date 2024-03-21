@@ -37,6 +37,10 @@ const Home = () => {
     <div style={{ margin: "30px" }}>
       <h2 style={{ color: "green" }}>Home Page</h2>
       <BlogList blogs={blogs} title="All Blogs Available!" />
+      <BlogList
+        blogs={blogs.filter((blog) => blog.actor === "Manu")}
+        title="Manu's Blogs"
+      />
     </div>
   );
 };
