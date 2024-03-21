@@ -39,6 +39,7 @@ const BlogList = ({ blogs, title }) => {
           <p style={{ color: "teal", margin: "2px", padding: "4px" }}>
             Actor is {blog.actor}{" "}
           </p>
+          <button onClick={() => handleDelete(blog.id)}>Delete Blog</button>
         </div>
       ))}
     </div>
