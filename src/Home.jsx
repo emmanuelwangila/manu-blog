@@ -1,30 +1,67 @@
 import React, { useState } from "react";
 
 const Home = () => {
-  const [name, setName] = useState("manu");
-  const [age, setAge] = useState(10);
-
-  const handleClick = () => {
-    setName("kijana-wamalwa");
-    setAge(48);
-  };
+  const [blogs, setBlogs] = useState([
+    {
+      title: "Movie",
+      actor: "Chris Evans",
+      date: "JUne ",
+      genre: "Action",
+      id: 1,
+    },
+    {
+      title: "Movie",
+      actor: "Chris Evans",
+      date: "JUne ",
+      genre: "Action",
+      id: 2,
+    },
+    {
+      title: "Movie",
+      actor: "Chris Evans",
+      date: "JUne ",
+      genre: "Action",
+      id: 3,
+    },
+    {
+      title: "Movie",
+      actor: "Chris Evans",
+      date: "JUne ",
+      genre: "Action",
+      id: 4,
+    },
+  ]);
 
   return (
-    <div
-      style={{
-        margin: "20px",
-        display: "flex",
-        padding: "10px",
-        color: "blue",
-        fontSize: "30px",
-      }}
-    >
-      HomePage
-      <p>
-        {" "}
-        {name} is {age} years{" "}
-      </p>
-      <button onClick={handleClick}> Click Buana</button>
+    <div style={{ margin: "30px" }}>
+      <h2>Home Page</h2>
+      {blogs.map((blog) => (
+        <div
+          style={{
+            // maxWidth: "640px",
+            margin: "3px",
+            padding: "3px",
+            display: "flex",
+            flexDirection: "column", // Change to column layout
+            justifyContent: "flex-center", // Justify content to the start
+            alignItems: "flex-center", // Align items to the start
+          }}
+          className="blog-preview"
+          key={blog.id}
+        >
+          <h2
+            style={{
+              color: "blue",
+              fontSize: "14px",
+              margin: "3px",
+              padding: "3px",
+            }}
+          >
+            {blog.title}
+          </h2>
+          <p>Actor is {blog.actor} </p>
+        </div>
+      ))}
     </div>
   );
 };
