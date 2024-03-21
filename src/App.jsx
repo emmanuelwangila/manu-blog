@@ -2,17 +2,22 @@ import "./App.css";
 import "./Navbar.jsx";
 import Navbar from "./Navbar.jsx";
 import Home from "./Home.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <div className="">
-        <Navbar />
-        <Home />
+    <Router>
+      <div className="App">
+        <div className="">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
 
-        {/* <h2>Mastery React</h2> */}
+          {/* <h2>Mastery React</h2> */}
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
