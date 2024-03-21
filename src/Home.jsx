@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import BlogList from "./BlogList";
+import useFetch from "./UseFetch";
 
 const Home = () => {
+  const { blogs, error, loading } = useFetch("http://localhost:8000/blogs");
+
   // Move 1000 inside the dependency array
 
   return (
