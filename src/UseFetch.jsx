@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useFetch = () => {
+const useFetch = (url) => {
   const [blogs, setBlogs] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -9,7 +9,7 @@ const useFetch = () => {
     setTimeout(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch("http://localhost:8000/blogs");
+          const response = await fetch(url);
           if (!response.ok) {
             throw new Error("error fetching data");
           }
@@ -26,7 +26,7 @@ const useFetch = () => {
       };
       fetchData();
     }, 1000);
-  }, []);
+  }, [url]);
 
   return { blogs, loading, error };
 };
