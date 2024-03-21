@@ -1,0 +1,19 @@
+{
+  "blogs": [
+    {
+      "title": "Sample Title 1",
+      "actor": "John Doe",
+      "date": "2024-03-21"
+    },
+    {
+      "title": "Sample Title 2",
+      "actor": "Jane Smith",
+      "date": "2024-03-20"
+    },
+    {
+      "title": "Sample Title 3",
+      "actor": "Alice Johnson",
+      "date": "2024-03-19"
+    }
+  ]
+}
