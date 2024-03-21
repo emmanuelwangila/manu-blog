@@ -4,8 +4,8 @@ import BlogList from "./BlogList";
 const Home = () => {
   const [blogs, setBlogs] = useState([
     {
-      title: "Movie",
-      actor: "Chris Evans",
+      title: "Movie Night",
+      actor: "Manu",
       date: "JUne ",
       genre: "Action",
       id: 1,
@@ -18,7 +18,7 @@ const Home = () => {
       id: 2,
     },
     {
-      title: "Movie",
+      title: "Series",
       actor: "Chris Evans",
       date: "JUne ",
       genre: "Action",
@@ -26,7 +26,7 @@ const Home = () => {
     },
     {
       title: "Movie",
-      actor: "Chris Evans",
+      actor: "Manu",
       date: "JUne ",
       genre: "Action",
       id: 4,
