@@ -2,17 +2,17 @@
   "blogs": [
     {
       "title": "Sample Title 1",
-      "actor": "John Doe",
+      "actor": "John Doe is an aspiring actor who has been passionate about performing arts since his childhood. He has appeared in numerous stage plays, television shows, and independent films. With his dedication and talent, John hopes to make a mark in the entertainment industry.",
       "date": "2024-03-21"
     },
     {
       "title": "Sample Title 2",
-      "actor": "Jane Smith",
+      "actor": "Jane Smith is a versatile actress known for her remarkable performances in both drama and comedy genres. She began her acting career at a young age and has since captivated audiences with her charisma and depth of character portrayal.",
       "date": "2024-03-20"
     },
     {
       "title": "Sample Title 3",
-      "actor": "Alice Johnson",
+      "actor": "Alice Johnson is an award-winning actor with a diverse body of work spanning across film, television, and theater. Her ability to immerse herself in roles and bring characters to life has earned her critical acclaim and a loyal fan following.",
       "date": "2024-03-19"
     }
   ]
