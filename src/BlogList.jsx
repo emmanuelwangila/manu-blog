@@ -1,9 +1,9 @@
 import React from "react";
 
-const BlogList = (props) => {
-  const blogs = props.blogs;
+const BlogList = ({ blogs, title }) => {
+  //   const blogs = props.blogs;
 
-  const title = props.title;
+  //   const title = props.title;
   return (
     <div>
       <h2 style={{ color: "black" }}> {title} </h2>
