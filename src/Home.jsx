@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-  const handleDelete = (id) => {};
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
 
   const [blogs, setBlogs] = useState([
     {
