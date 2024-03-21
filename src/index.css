@@ -47,3 +47,9 @@ code {
 .a:hover {
   color: green;
 }
+
+.blog-preview:hover {
+  box-shadow: inset;
+  background-color: aqua;
+  cursor: pointer;
+}

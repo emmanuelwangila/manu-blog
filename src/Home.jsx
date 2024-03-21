@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([
@@ -34,36 +35,8 @@ const Home = () => {
 
   return (
     <div style={{ margin: "30px" }}>
-      <h2>Home Page</h2>
-      {blogs.map((blog) => (
-        <div
-          style={{
-            // maxWidth: "640px",
-            margin: "3px",
-            padding: "3px",
-            display: "flex",
-            flexDirection: "column", // Change to column layout
-            justifyContent: "flex-center", // Justify content to the start
-            alignItems: "flex-center", // Align items to the start
-          }}
-          className="blog-preview"
-          key={blog.id}
-        >
-          <h2
-            style={{
-              color: "blue",
-              fontSize: "16px",
-              margin: "3px",
-              padding: "3px",
-            }}
-          >
-            {blog.title}
-          </h2>
-          <p style={{ color: "teal", margin: "2px", padding: "4px" }}>
-            Actor is {blog.actor}{" "}
-          </p>
-        </div>
-      ))}
+      <h2 style={{ color: "green" }}>Home Page</h2>
+      <BlogList blogs={blogs} />
     </div>
   );
 };
