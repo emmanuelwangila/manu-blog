@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs, title }) => {
   //   const blogs = props.blogs;
@@ -26,19 +27,21 @@ const BlogList = ({ blogs, title }) => {
           className="blog-preview"
           key={blog.id}
         >
-          <h2
-            style={{
-              color: "blue",
-              fontSize: "16px",
-              margin: "3px",
-              padding: "3px",
-            }}
-          >
-            {blog.title}
-          </h2>
-          <p style={{ color: "teal", margin: "2px", padding: "4px" }}>
-            Actor is {blog.actor}{" "}
-          </p>
+          <Link to={`blogs/${blog.id}`}>
+            <h2
+              style={{
+                color: "blue",
+                fontSize: "16px",
+                margin: "3px",
+                padding: "3px",
+              }}
+            >
+              {blog.title}
+            </h2>
+            <p style={{ color: "teal", margin: "2px", padding: "4px" }}>
+              Actor is {blog.actor}{" "}
+            </p>
+          </Link>
         </div>
       ))}
     </div>
