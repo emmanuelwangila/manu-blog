@@ -13,7 +13,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/new" element={<Create />}></Route>
+            <Route path="/new-blog" element={<Create />}></Route>
           </Routes>
 
           {/* <h2>Mastery React</h2> */}
