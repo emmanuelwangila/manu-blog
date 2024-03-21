@@ -20,7 +20,7 @@ const Navbar = () => {
           </a>
           <a
             className="a"
-            href="/new"
+            href="/new-blog"
             style={{
               backgroundColor: "white",
               borderRadius: "5px",
