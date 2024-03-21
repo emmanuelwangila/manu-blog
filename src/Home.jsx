@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
@@ -32,6 +32,11 @@ const Home = () => {
       id: 4,
     },
   ]);
+
+  useEffect(() => {
+    console.log("Use effect running");
+    console.log({ blogs });
+  }, []);
 
   const handleDelete = (id) => {
     const newBlogs = blogs.filter((blog) => blog.id !== id);
