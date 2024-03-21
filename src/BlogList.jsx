@@ -6,7 +6,7 @@ const BlogList = ({ blogs, title }) => {
   //   const title = props.title;
   return (
     <div>
-      <h2 style={{ color: "black" }}> {title} </h2>
+      <h2 style={{ color: "blue" }}> {title} </h2>
       {blogs.map((blog) => (
         <div
           style={{
