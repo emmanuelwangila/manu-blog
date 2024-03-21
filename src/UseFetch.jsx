@@ -27,4 +27,8 @@ const useFetch = () => {
       fetchData();
     }, 1000);
   }, []);
+
+  return { blogs, loading, error };
 };
+
+export default useFetch;
