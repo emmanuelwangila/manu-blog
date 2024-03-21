@@ -12,6 +12,7 @@ const Home = () => {
           throw new Error("error fetching data");
         }
         const data = await response.json();
+        setBlogs(data);
         console.log(data);
       } catch (error) {
         console.error("error fetching data", error.message);
@@ -28,12 +29,14 @@ const Home = () => {
   return (
     <div style={{ margin: "30px" }}>
       <h2 style={{ color: "green" }}>Home Page</h2>
+      {blogs && (
+        <BlogList
+          blogs={blogs}
+          handleDelete={handleDelete}
+          title="All Blogs Available!"
+        />
+      )}
       {/* <BlogList
-        blogs={blogs}
-        handleDelete={handleDelete}
-        title="All Blogs Available!"
-      />
-      <BlogList
         blogs={blogs.filter((blog) => blog.actor === "Manu")}
         title="Manu's Blogs"
       /> */}
