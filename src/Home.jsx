@@ -52,14 +52,16 @@ const Home = () => {
           <h2
             style={{
               color: "blue",
-              fontSize: "14px",
+              fontSize: "16px",
               margin: "3px",
               padding: "3px",
             }}
           >
             {blog.title}
           </h2>
-          <p>Actor is {blog.actor} </p>
+          <p style={{ color: "teal", margin: "2px", padding: "4px" }}>
+            Actor is {blog.actor}{" "}
+          </p>
         </div>
       ))}
     </div>
