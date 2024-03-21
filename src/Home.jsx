@@ -4,6 +4,7 @@ import BlogList from "./BlogList";
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,6 +19,8 @@ const Home = () => {
           setLoading(false);
           console.log(data);
         } catch (error) {
+          setLoading(false);
+          setError(error.message);
           console.error("error fetching data", error.message);
         }
       };
@@ -28,6 +31,7 @@ const Home = () => {
   return (
     <div style={{ margin: "30px" }}>
       <h2 style={{ color: "green" }}>Home Page</h2>
+      {error && <div> {error} </div>}
       {loading && <div>Loading ..... </div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs Available!" />}
       {/* <BlogList
