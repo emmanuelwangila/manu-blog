@@ -21,21 +21,10 @@ const Home = () => {
     fetchData();
   }, []);
 
-  const handleDelete = (id) => {
-    const newBlogs = blogs.filter((blog) => blog.id !== id);
-    setBlogs(newBlogs);
-  };
-
   return (
     <div style={{ margin: "30px" }}>
       <h2 style={{ color: "green" }}>Home Page</h2>
-      {blogs && (
-        <BlogList
-          blogs={blogs}
-          handleDelete={handleDelete}
-          title="All Blogs Available!"
-        />
-      )}
+      {blogs && <BlogList blogs={blogs} title="All Blogs Available!" />}
       {/* <BlogList
         blogs={blogs.filter((blog) => blog.actor === "Manu")}
         title="Manu's Blogs"
