@@ -39,7 +39,7 @@ const Navbar = () => {
               color: "black",
             }}
           >
-            About
+            details
           </Link>
         </div>
       </div>
