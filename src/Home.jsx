@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div style={{ margin: "30px" }}>
       <h2 style={{ color: "green" }}>Home Page</h2>
-      <BlogList blogs={blogs} />
+      <BlogList blogs={blogs} title="All Blogs Available!" />
     </div>
   );
 };

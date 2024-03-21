@@ -2,19 +2,24 @@ import React from "react";
 
 const BlogList = (props) => {
   const blogs = props.blogs;
+
+  const title = props.title;
   return (
     <div>
+      <h2 style={{ color: "black" }}> {title} </h2>
       {blogs.map((blog) => (
         <div
           style={{
             // maxWidth: "640px",
-            margin: "3px",
+            margin: "5px",
             padding: "3px",
             display: "flex",
             flexDirection: "column", // Change to column layout
             justifyContent: "flex-start", // Justify content to the start
             alignItems: "flex-start",
             hover: "bg-blue",
+            borderRadius: "5px",
+            border: "2px solid #718096",
 
             // Align items to the start
           }}
