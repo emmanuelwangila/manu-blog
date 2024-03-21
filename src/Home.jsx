@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
+  const handleDelete = (id) => {};
+
   const [blogs, setBlogs] = useState([
     {
       title: "Movie Night",
@@ -36,7 +38,11 @@ const Home = () => {
   return (
     <div style={{ margin: "30px" }}>
       <h2 style={{ color: "green" }}>Home Page</h2>
-      <BlogList blogs={blogs} title="All Blogs Available!" />
+      <BlogList
+        blogs={blogs}
+        handleDelete={handleDelete}
+        title="All Blogs Available!"
+      />
       <BlogList
         blogs={blogs.filter((blog) => blog.actor === "Manu")}
         title="Manu's Blogs"
