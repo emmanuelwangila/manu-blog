@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-  const handleDelete = (id) => {
-    const newBlogs = blogs.filter((blog) => blog.id !== id);
-    setBlogs(newBlogs);
-  };
-
   const [blogs, setBlogs] = useState([
     {
       title: "Movie Night",
@@ -37,6 +32,11 @@ const Home = () => {
       id: 4,
     },
   ]);
+
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
 
   return (
     <div style={{ margin: "30px" }}>
