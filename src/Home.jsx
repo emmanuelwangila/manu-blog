@@ -17,6 +17,7 @@ const Home = () => {
           const data = await response.json();
           setBlogs(data);
           setLoading(false);
+          setError(null);
           console.log(data);
         } catch (error) {
           setLoading(false);
