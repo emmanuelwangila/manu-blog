@@ -8,9 +8,9 @@ const Navbar = () => {
         <h3 className=""> Manuel's Blog</h3>
 
         <div className="links">
-          <a
+          <Link
             className="a"
-            href="/"
+            to="/"
             style={{
               backgroundColor: "white",
               borderRadius: "5px",
@@ -18,7 +18,7 @@ const Navbar = () => {
             }}
           >
             Home
-          </a>
+          </Link>
           <Link
             className="a"
             to="/new-blog"
@@ -30,9 +30,9 @@ const Navbar = () => {
           >
             New Blog
           </Link>
-          <a
+          <Link
             className="a"
-            href="/"
+            to="/"
             style={{
               backgroundColor: "white",
               borderRadius: "5px",
@@ -40,7 +40,7 @@ const Navbar = () => {
             }}
           >
             About
-          </a>
+          </Link>
         </div>
       </div>
     </div>
