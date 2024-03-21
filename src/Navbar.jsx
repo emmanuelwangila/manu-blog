@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -18,9 +19,9 @@ const Navbar = () => {
           >
             Home
           </a>
-          <a
+          <Link
             className="a"
-            href="/new-blog"
+            to="/new-blog"
             style={{
               backgroundColor: "white",
               borderRadius: "5px",
@@ -28,7 +29,7 @@ const Navbar = () => {
             }}
           >
             New Blog
-          </a>
+          </Link>
           <a
             className="a"
             href="/"
