@@ -78,8 +78,12 @@ const Create = () => {
               backgroundColor: "green",
               cursor: "pointer",
               borderRadius: "5px",
+              text: "white",
               margin: "4px",
               padding: "6px",
+              display: "flex", // Center the content horizontally
+              justifyContent: "center", // Align content within the button
+              alignItems: "center", // Vertically center the content (optional)
             }}
           >
             Add Blog
