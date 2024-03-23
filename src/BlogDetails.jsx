@@ -5,12 +5,16 @@ import useFetch from "./UseFetch";
 const BlogDetails = () => {
   const { id } = useParams();
 
-  const { blogs, loading, error } = useFetch("https://localhost:8000/blogs");
+  const { blogs, loading, error } = useFetch(
+    `http://localhost:8000/blogs/${id}`
+  );
 
   return (
     <div>
       blogdetails {id}
-      <div> error && {error} </div>
+      <div> {loading && <div>Loading.... </div>}</div>
+      {blogs && <div> {blogs.actor} </div>}
+      {error && <div> {error} </div>}
     </div>
   );
 };
