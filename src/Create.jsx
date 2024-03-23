@@ -51,15 +51,36 @@ const Create = () => {
           <label style={{ margin: "3px", padding: "2px ", color: "teal" }}>
             blog author :
           </label>
-          <select style={{ width: "full", borderRadius: "5px" }}>
+          <select
+            style={{
+              width: "full",
+              borderRadius: "5px",
+              margin: "3px",
+              padding: "5px",
+            }}
+          >
             <option value="manu">Manu</option>
             <option value="manu">Manu</option>
           </select>
-          <label>blog body :</label>
-          <textarea required placeholder="manu">
+          <label style={{ color: "teal", margin: "3px", padding: "3px" }}>
+            blog body :
+          </label>
+          <textarea
+            style={{ margin: "4px", padding: "6px", borderRadius: "5px" }}
+            required
+            placeholder="manu"
+          >
             {" "}
           </textarea>
-          <button>Add Blog</button>
+          <button
+            style={{
+              backgroundColor: "green",
+              cursor: "pointer",
+              borderRadius: "5px",
+            }}
+          >
+            Add Blog
+          </button>
         </form>
       </div>
     </div>
