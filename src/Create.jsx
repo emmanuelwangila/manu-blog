@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const Create = () => {
   const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
+
   return (
     <div
       style={{
@@ -56,6 +58,8 @@ const Create = () => {
             blog author :
           </label>
           <select
+            onChange={(e) => setAuthor(e.target.value)}
+            value={author}
             style={{
               width: "full",
               borderRadius: "5px",
