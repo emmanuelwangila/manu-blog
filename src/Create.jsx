@@ -5,6 +5,21 @@ const Create = () => {
   const [author, setAuthor] = useState("");
   const [actor, setActor] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const blog = { title, author, actor };
+    console.log("blog", blog);
+  };
+
+  fetch("http://localhost:8000/blogs", {
+    method: "POST",
+    headers: { "Content-Type": "application-json" },
+    body: JSON.stringify(blog),
+  }).then(() => {
+    console.log("New Blog Added");
+  });
+
   return (
     <div
       style={{
@@ -34,6 +49,7 @@ const Create = () => {
         }}
       >
         <form
+          onSubmit={handleSubmit}
           style={{
             display: "flex",
             flexDirection: "column",
