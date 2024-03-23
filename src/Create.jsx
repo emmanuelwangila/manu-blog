@@ -102,21 +102,41 @@ const Create = () => {
           >
             {" "}
           </textarea>
-          <button
-            style={{
-              backgroundColor: "green",
-              cursor: "pointer",
-              borderRadius: "5px",
-              text: "white",
-              margin: "4px",
-              padding: "6px",
-              display: "flex", // Center the content horizontally
-              justifyContent: "center", // Align content within the button
-              alignItems: "center", // Vertically center the content (optional)
-            }}
-          >
-            Add Blog
-          </button>
+          {!loading && (
+            <button
+              style={{
+                backgroundColor: "green",
+                cursor: "pointer",
+                borderRadius: "5px",
+                text: "white",
+                margin: "4px",
+                padding: "6px",
+                display: "flex", // Center the content horizontally
+                justifyContent: "center", // Align content within the button
+                alignItems: "center", // Vertically center the content (optional)
+              }}
+            >
+              Add Blog
+            </button>
+          )}
+          {loading && (
+            <button
+              disabled
+              style={{
+                backgroundColor: "green",
+                cursor: "pointer",
+                borderRadius: "5px",
+                text: "white",
+                margin: "4px",
+                padding: "6px",
+                display: "flex", // Center the content horizontally
+                justifyContent: "center", // Align content within the button
+                alignItems: "center", // Vertically center the content (optional)
+              }}
+            >
+              Adding Blog.....
+            </button>
+          )}
         </form>
       </div>
     </div>
