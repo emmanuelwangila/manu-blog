@@ -35,7 +35,9 @@ const Create = () => {
             maxWidth: "800px",
           }}
         >
-          <label style={{ margin: "3px", padding: "2px " }}>blog title :</label>
+          <label style={{ margin: "3px", padding: "2px ", color: "teal" }}>
+            blog title :
+          </label>
           <input
             style={{
               width: "full",
