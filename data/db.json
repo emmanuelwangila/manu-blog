@@ -20,6 +20,13 @@
       "date": "2024-03-19",
       "id": 3,
       "label": "Sample Title 3"
+    },
+    {
+      "title": "Sample Title 3",
+      "actor": "Alice Johnson is an award-winning actor with a diverse body of work spanning across film, television, and theater. Her ability to immerse herself in roles and bring characters to life has earned her critical acclaim and a loyal fan following.",
+      "date": "2024-03-19",
+      "id": 4,
+      "label": "Sample Title 3"
     }
   ]
 }
