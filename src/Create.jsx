@@ -4,12 +4,14 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [actor, setActor] = useState("");
+  const [loading, isLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const blog = { title, author, actor };
     console.log("blog", blog);
+    isLoading(true);
 
     fetch("http://localhost:8000/blogs", {
       method: "POST",
@@ -18,6 +20,7 @@ const Create = () => {
     }).then(() => {
       console.log("New Blog Added");
     });
+    isLoading(false);
   };
 
   return (
