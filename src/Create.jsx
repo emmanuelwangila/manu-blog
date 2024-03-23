@@ -98,7 +98,6 @@ const Create = () => {
           >
             Add Blog
           </button>
-          {title}
         </form>
       </div>
     </div>
