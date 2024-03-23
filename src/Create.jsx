@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Create = () => {
+  const [title, setTitle] = useState("");
   return (
     <div
       style={{
@@ -47,6 +48,8 @@ const Create = () => {
               padding: "5px",
             }}
             type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
             required
           />
           <label style={{ margin: "3px", padding: "2px ", color: "teal" }}>
@@ -88,6 +91,7 @@ const Create = () => {
           >
             Add Blog
           </button>
+          {title}
         </form>
       </div>
     </div>
