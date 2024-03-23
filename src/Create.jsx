@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Create = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
+  const [actor, setActor] = useState("");
 
   return (
     <div
@@ -74,6 +75,8 @@ const Create = () => {
             blog body :
           </label>
           <textarea
+            onChange={(e) => setActor(e.target.value)}
+            value={actor}
             style={{ margin: "4px", padding: "6px", borderRadius: "5px" }}
             required
             placeholder="manu"
