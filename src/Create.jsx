@@ -22,9 +22,10 @@ const Create = () => {
       <div
         style={{
           display: "flex",
+          width: "100vh",
           flexDirection: "column",
-          justifyContent: "center",
           margin: "5px",
+          alignSelf: "center",
           border: "2",
         }}
       >
