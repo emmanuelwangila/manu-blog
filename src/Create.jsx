@@ -77,6 +77,8 @@ const Create = () => {
               backgroundColor: "green",
               cursor: "pointer",
               borderRadius: "5px",
+              margin: "4px",
+              padding: "6px",
             }}
           >
             Add Blog
