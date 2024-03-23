@@ -48,8 +48,10 @@ const Create = () => {
             type="text"
             required
           />
-          <label> blog author:</label>
-          <select>
+          <label style={{ margin: "3px", padding: "2px ", color: "teal" }}>
+            blog author :
+          </label>
+          <select style={{ width: "full", borderRadius: "5px" }}>
             <option value="manu">Manu</option>
             <option value="manu">Manu</option>
           </select>
