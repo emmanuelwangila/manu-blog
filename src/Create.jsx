@@ -8,9 +8,9 @@ const Create = () => {
         flexDirection: "column",
         margin: "5px",
         padding: "5px",
-        maxWidth: "500px,",
+        width: "full",
         justifyContent: "center",
-        alignItems: "center",
+        // alignItems: "center",
         borderRadius: "5px",
       }}
     >
@@ -23,28 +23,38 @@ const Create = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "end",
+          justifyContent: "center",
           margin: "5px",
+          border: "2",
         }}
       >
         <form
           style={{
             display: "flex",
             flexDirection: "column",
-            maxWidth: "500px",
-            justifyContent: "center",
-            justifyItems: "center",
+            maxWidth: "800px",
           }}
         >
-          <label>blog title :</label>
-          <input type="text" required />
+          <label style={{ margin: "3px", padding: "2px " }}>blog title :</label>
+          <input
+            style={{
+              width: "full",
+              borderRadius: "6px",
+              margin: "5px",
+              padding: "5px",
+            }}
+            type="text"
+            required
+          />
           <label> blog author:</label>
           <select>
             <option value="manu">Manu</option>
             <option value="manu">Manu</option>
           </select>
           <label>blog body :</label>
-          <textarea required> </textarea>
+          <textarea required placeholder="manu">
+            {" "}
+          </textarea>
           <button>Add Blog</button>
         </form>
       </div>
