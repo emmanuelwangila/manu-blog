@@ -29,6 +29,7 @@ const Create = () => {
           </select>
           <label>blog body :</label>
           <textarea required> </textarea>
+          <button>Add Blog</button>
         </form>
       </div>
     </div>
