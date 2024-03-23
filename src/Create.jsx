@@ -10,6 +10,7 @@ const Create = () => {
         padding: "5px",
         maxWidth: "500px,",
         justifyContent: "center",
+        alignItems: "center",
         borderRadius: "5px",
       }}
     >
@@ -18,8 +19,23 @@ const Create = () => {
         Add a new Blog
       </h2>
 
-      <div>
-        <form>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "end",
+          margin: "5px",
+        }}
+      >
+        <form
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "500px",
+            justifyContent: "center",
+            justifyItems: "center",
+          }}
+        >
           <label>blog title :</label>
           <input type="text" required />
           <label> blog author:</label>
