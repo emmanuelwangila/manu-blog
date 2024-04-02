@@ -5,14 +5,17 @@ const BlogList = ({ blogs, title }) => {
   return (
     <div
       style={{
-        display: "grid",
-        gridTemplateColumns: "1fr",
+        display: "flex",
+        // gridTemplateColumns: "1fr",
         // For small and medium screens, display as a single column
-        gap: "20px",
+        flexDirection: "column",
         borderRadius: "5px",
         backgroundColor: "black",
         color: "white",
+        margin: "5px",
         padding: "20px",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <h2 style={{ color: "blue" }}>{title}</h2>
@@ -22,6 +25,8 @@ const BlogList = ({ blogs, title }) => {
           style={{
             border: "1px solid #ccc",
             borderRadius: "5px",
+            margin: "5px",
+            maxWidth: "600px",
             boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
             padding: "20px",
             cursor: "pointer",
