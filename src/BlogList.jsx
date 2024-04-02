@@ -8,7 +8,9 @@ const BlogList = ({ blogs, title }) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center", // Align items to the center vertically
+        alignItems: "center",
+        backgroundColor: "black", // Change background color to black
+        minHeight: "100vh", // Set minimum height to fill the viewport
       }}
     >
       <h2 style={{ color: "blue" }}>{title}</h2>
