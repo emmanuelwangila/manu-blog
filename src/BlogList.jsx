@@ -6,6 +6,7 @@ const BlogList = ({ blogs, title }) => {
     <div
       style={{
         display: "flex",
+        borderRadius: "5px",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
