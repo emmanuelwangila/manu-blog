@@ -5,30 +5,26 @@ const BlogList = ({ blogs, title }) => {
   return (
     <div
       style={{
-        display: "flex",
-        borderRadius: "5px",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "black", // Change background color to black
-        minHeight: "100vh", // Set minimum height to fill the viewport
+        display: "grid",
+        gridTemplateColumns: "1fr", // For small and medium screens, display as a single column
+        gap: "20px",
+        backgroundColor: "black",
+        color: "white",
+        padding: "20px",
       }}
     >
       <h2 style={{ color: "blue" }}>{title}</h2>
       {blogs.map((blog) => (
         <div
+          key={blog.id}
           style={{
-            maxWidth: "400px",
-            margin: "10px",
-            padding: "20px",
             border: "1px solid #ccc",
             borderRadius: "5px",
             boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-            transition: "transform 0.3s ease-in-out",
+            padding: "20px",
             cursor: "pointer",
           }}
           className="blog-card"
-          key={blog.id}
         >
           <Link
             to={`blogs/${blog.id}`}
