@@ -6,8 +6,10 @@ const BlogList = ({ blogs, title }) => {
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "1fr", // For small and medium screens, display as a single column
+        gridTemplateColumns: "1fr",
+        // For small and medium screens, display as a single column
         gap: "20px",
+        borderRadius: "5px",
         backgroundColor: "black",
         color: "white",
         padding: "20px",
