@@ -3,7 +3,14 @@ import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs, title }) => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center", // Align items to the center vertically
+      }}
+    >
       <h2 style={{ color: "blue" }}>{title}</h2>
       {blogs.map((blog) => (
         <div
