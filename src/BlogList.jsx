@@ -40,7 +40,7 @@ const BlogList = ({ blogs, title }) => {
             <h2 style={{ color: "blue", fontSize: "20px", margin: "0" }}>
               {blog.title}
             </h2>
-            <p style={{ color: "teal", margin: "5px 0 0", fontSize: "14px" }}>
+            <p style={{ color: "white", margin: "5px 0 0", fontSize: "14px" }}>
               Actor is {blog.actor}
             </p>
           </Link>
