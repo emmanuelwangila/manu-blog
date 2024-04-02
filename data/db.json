@@ -1,11 +1,6 @@
 {
   "blogs": [
     {
-      "title": "Sample Title 2",
-      "actor": "Jane Smith is a versatile actress known for her remarkable performances in both drama and comedy genres. She began her acting career at a young age and has since captivated audiences with her charisma and depth of character portrayal.",
-      "id": "2"
-    },
-    {
       "title": "Sample Title 3",
       "actor": "Alice Johnson is an award-winning actor with a diverse body of work spanning across film, television, and theater. Her ability to immerse herself in roles and bring characters to life has earned her critical acclaim and a loyal fan following.",
       "id": "3"
@@ -18,22 +13,16 @@
       "label": "Sample Title 3"
     },
     {
-      "id": "275f",
-      "title": "Reprehenderit et sin",
-      "author": "manu",
-      "actor": "Lorem asperiores mol"
-    },
-    {
       "id": "02c4",
       "title": "Inventore eveniet d",
       "author": "manu",
       "actor": "Ut et asperiores har"
     },
     {
-      "id": "7934",
-      "title": "Kujaz Uereve",
+      "id": "f7b8",
+      "title": "Sed nulla anim et il",
       "author": "manu",
-      "actor": "KIjanaaa unafanya nini sasaa. bhfdlvuivbf bhdfyifb hbdffyuvpyfawc"
+      "actor": "Excepturi deserunt m"
     }
   ]
 }

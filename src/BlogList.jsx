@@ -2,44 +2,33 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs, title }) => {
-  //   const blogs = props.blogs;
-
-  //   const title = props.title;
   return (
     <div>
-      <h2 style={{ color: "blue" }}> {title} </h2>
+      <h2 style={{ color: "blue" }}>{title}</h2>
       {blogs.map((blog) => (
         <div
           style={{
-            // maxWidth: "640px",
-            margin: "5px",
-            padding: "3px",
-            display: "flex",
-            flexDirection: "column", // Change to column layout
-            justifyContent: "flex-start", // Justify content to the start
-            alignItems: "flex-start",
-            hover: "bg-blue",
+            maxWidth: "400px",
+            margin: "10px",
+            padding: "20px",
+            border: "1px solid #ccc",
             borderRadius: "5px",
-            border: "2px solid #718096",
-
-            // Align items to the start
+            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+            transition: "transform 0.3s ease-in-out",
+            cursor: "pointer",
           }}
-          className="blog-preview"
+          className="blog-card"
           key={blog.id}
         >
-          <Link to={`blogs/${blog.id}`}>
-            <h2
-              style={{
-                color: "blue",
-                fontSize: "16px",
-                margin: "3px",
-                padding: "3px",
-              }}
-            >
+          <Link
+            to={`blogs/${blog.id}`}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <h2 style={{ color: "blue", fontSize: "20px", margin: "0" }}>
               {blog.title}
             </h2>
-            <p style={{ color: "teal", margin: "2px", padding: "4px" }}>
-              Actor is {blog.actor}{" "}
+            <p style={{ color: "teal", margin: "5px 0 0", fontSize: "14px" }}>
+              Actor is {blog.actor}
             </p>
           </Link>
         </div>
