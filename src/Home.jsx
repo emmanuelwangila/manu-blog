@@ -32,8 +32,12 @@ const Home = () => {
             cursor: "pointer",
           }}
         >
-          <span></span>
-          <NavLink to={"/new-blog"}> Add a Blog </NavLink>
+          <span style={{ color: "white" }}>
+            <NavLink to={"/new-blog"} style={{ color: "white" }}>
+              {" "}
+              Add a Blog{" "}
+            </NavLink>
+          </span>
         </button>
       </div>
       {error && <div> {error} </div>}
