@@ -31,7 +31,7 @@ const Create = () => {
         margin: "5px",
         padding: "5px",
         width: "full",
-        height: "lg: 100vh md:full sm:fit",
+        height: "100vh",
         justifyContent: "center",
         // alignItems: "center",
         borderRadius: "5px",
