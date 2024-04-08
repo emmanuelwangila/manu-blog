@@ -31,7 +31,7 @@ const Create = () => {
         margin: "5px",
         padding: "5px",
         width: "full",
-        height: "full",
+        height: "100vh",
         justifyContent: "center",
         // alignItems: "center",
         borderRadius: "5px",
@@ -46,7 +46,7 @@ const Create = () => {
       <div
         style={{
           display: "flex",
-          width: "full",
+          width: "100vh",
           flexDirection: "column",
           margin: "5px",
           alignSelf: "center",
