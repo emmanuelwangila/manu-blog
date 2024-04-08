@@ -1,4 +1,5 @@
 // import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import BlogList from "./BlogList";
 import useFetch from "./UseFetch";
 
@@ -25,12 +26,14 @@ const Home = () => {
           style={{
             color: "white",
             margin: "5px",
-            padding: "5px",
+            padding: "8px",
             backgroundColor: "blue",
             borderRadius: "5px",
+            cursor: "pointer",
           }}
         >
-          Add a Blog
+          <span></span>
+          <NavLink to={"/new-blog"}> Add a Blog </NavLink>
         </button>
       </div>
       {error && <div> {error} </div>}
