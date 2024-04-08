@@ -20,21 +20,6 @@ const BlogList = ({ blogs, title }) => {
     >
       <h2 style={{ color: "blue" }}>{title}</h2>
 
-      <div>
-        <button
-          className=""
-          style={{
-            color: "white",
-            margin: "5px",
-            padding: "5px",
-            backgroundColor: "blue",
-            borderRadius: "5px",
-          }}
-        >
-          Add a Blog
-        </button>
-      </div>
-
       {blogs.map((blog) => (
         <div
           key={blog.id}

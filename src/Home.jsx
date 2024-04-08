@@ -18,6 +18,21 @@ const Home = () => {
       }}
     >
       <h2 style={{ color: "green" }}>Home Page</h2>
+
+      <div>
+        <button
+          className=""
+          style={{
+            color: "white",
+            margin: "5px",
+            padding: "5px",
+            backgroundColor: "blue",
+            borderRadius: "5px",
+          }}
+        >
+          Add a Blog
+        </button>
+      </div>
       {error && <div> {error} </div>}
       {loading && <div>Loading ..... </div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs Available!" />}
