@@ -8,7 +8,15 @@ const Home = () => {
   // Move 1000 inside the dependency array
 
   return (
-    <div style={{ margin: "30px" }}>
+    <div
+      style={{
+        margin: "",
+        backgroundColor: "black",
+        borderRadius: "5px",
+        width: "full",
+        height: "full",
+      }}
+    >
       <h2 style={{ color: "green" }}>Home Page</h2>
       {error && <div> {error} </div>}
       {loading && <div>Loading ..... </div>}
