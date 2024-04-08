@@ -27,6 +27,8 @@ const BlogList = ({ blogs, title }) => {
             color: "white",
             margin: "5px",
             padding: "5px",
+            backgroundColor: "blue",
+            borderRadius: "5px",
           }}
         >
           Add a Blog
