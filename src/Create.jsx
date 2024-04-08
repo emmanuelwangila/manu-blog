@@ -30,7 +30,7 @@ const Create = () => {
         flexDirection: "column",
         margin: "5px",
         padding: "5px",
-        width: "full",
+        width: "100%",
         height: "100vh",
         justifyContent: "center",
         // alignItems: "center",
@@ -46,11 +46,11 @@ const Create = () => {
       <div
         style={{
           display: "flex",
-          width: "100vh",
           flexDirection: "column",
           margin: "5px",
           alignSelf: "center",
-          border: "2",
+          maxWidth: "800px", // Added maxWidth for better responsiveness
+          width: "100%", // Added width to make it responsive
         }}
       >
         <form
@@ -58,9 +58,8 @@ const Create = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            maxWidth: "800px",
             // backgroundColor: "white",
-            border: "white",
+            border: "none", // Removed border
           }}
         >
           <label style={{ margin: "3px", padding: "2px ", color: "teal" }}>
@@ -68,7 +67,7 @@ const Create = () => {
           </label>
           <input
             style={{
-              width: "full",
+              width: "100%",
               borderRadius: "6px",
               margin: "5px",
               padding: "5px",
@@ -85,7 +84,7 @@ const Create = () => {
             onChange={(e) => setAuthor(e.target.value)}
             value={author}
             style={{
-              width: "full",
+              width: "100%",
               borderRadius: "5px",
               margin: "3px",
               padding: "5px",
@@ -100,7 +99,12 @@ const Create = () => {
           <textarea
             onChange={(e) => setActor(e.target.value)}
             value={actor}
-            style={{ margin: "4px", padding: "6px", borderRadius: "5px" }}
+            style={{
+              margin: "4px",
+              padding: "6px",
+              borderRadius: "5px",
+              width: "100%",
+            }}
             required
             placeholder="manu"
           >
@@ -115,9 +119,6 @@ const Create = () => {
                 text: "white",
                 margin: "4px",
                 padding: "6px",
-                display: "flex", // Center the content horizontally
-                justifyContent: "center", // Align content within the button
-                alignItems: "center", // Vertically center the content (optional)
               }}
             >
               Add Blog
@@ -133,9 +134,6 @@ const Create = () => {
                 text: "white",
                 margin: "4px",
                 padding: "6px",
-                display: "flex", // Center the content horizontally
-                justifyContent: "center", // Align content within the button
-                alignItems: "center", // Vertically center the content (optional)
               }}
             >
               Adding Blog.....
