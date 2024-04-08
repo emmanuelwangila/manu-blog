@@ -34,6 +34,7 @@ const Create = () => {
         justifyContent: "center",
         // alignItems: "center",
         borderRadius: "5px",
+        backgroundColor: "gray",
       }}
     >
       <h2 style={{ color: "blue", margin: "5px", padding: "5px" }}>
