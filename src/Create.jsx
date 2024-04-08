@@ -33,7 +33,7 @@ const Create = () => {
         width: "100%",
         height: "100vh",
         justifyContent: "center",
-        // alignItems: "center",
+        alignItems: "center",
         borderRadius: "5px",
         backgroundColor: "black",
       }}
@@ -48,9 +48,9 @@ const Create = () => {
           display: "flex",
           flexDirection: "column",
           margin: "5px",
-          alignSelf: "center",
-          maxWidth: "800px", // Added maxWidth for better responsiveness
-          width: "100%", // Added width to make it responsive
+          maxWidth: "900px",
+          width: "100%",
+          // maxWidth: "800px", // Added maxWidth for better responsivene// Added width to make it responsive
         }}
       >
         <form
@@ -70,7 +70,7 @@ const Create = () => {
               width: "100%",
               borderRadius: "6px",
               margin: "5px",
-              padding: "5px",
+              padding: "8px",
             }}
             type="text"
             value={title}
@@ -87,7 +87,7 @@ const Create = () => {
               width: "100%",
               borderRadius: "5px",
               margin: "3px",
-              padding: "5px",
+              padding: "8px",
             }}
           >
             <option value="manu">Manu</option>
@@ -100,8 +100,8 @@ const Create = () => {
             onChange={(e) => setActor(e.target.value)}
             value={actor}
             style={{
-              margin: "4px",
-              padding: "6px",
+              margin: "6px",
+              padding: "8px",
               borderRadius: "5px",
               width: "100%",
             }}
