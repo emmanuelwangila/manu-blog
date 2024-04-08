@@ -31,10 +31,11 @@ const Create = () => {
         margin: "5px",
         padding: "5px",
         width: "full",
+        height: "lg: 100vh md:full sm:fit",
         justifyContent: "center",
         // alignItems: "center",
         borderRadius: "5px",
-        backgroundColor: "gray",
+        backgroundColor: "black",
       }}
     >
       <h2 style={{ color: "blue", margin: "5px", padding: "5px" }}>
@@ -58,6 +59,8 @@ const Create = () => {
             display: "flex",
             flexDirection: "column",
             maxWidth: "800px",
+            // backgroundColor: "white",
+            border: "white",
           }}
         >
           <label style={{ margin: "3px", padding: "2px ", color: "teal" }}>
